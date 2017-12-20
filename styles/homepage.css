@@ -1,0 +1,113 @@
+.bg-white {
+    background-color: #FFF;
+    overflow: hidden; 
+}
+
+#grid {
+    overflow: hidden;
+}
+
+article {
+    height: 250px;
+    background-color: #EEEEEE;
+    overflow: hidden;
+	margin: 10px 0;
+	position: relative;
+}
+
+article header {
+    margin-top: 80px;
+    font-size: 2rem;
+    padding: 0 15px;
+}
+
+article footer {
+    bottom: -200px;
+	padding: 0 15px;
+	position: absolute;
+	background-color: #FFF;
+	width: 100%;
+}
+
+article footer h2 {
+    float: left;
+    margin: 5px 0;
+    font-size: 2rem;
+}
+
+article footer span {
+    float: right;
+}
+
+article:hover header {
+    margin-top: 5px;
+}
+
+article:hover footer {
+    bottom: 0;
+}
+
+article header,
+article:hover header {
+	transition: margin-top 0.3s;
+}
+
+article footer,
+article:hover footer {
+	transition: bottom 0.3s;
+}
+
+article p {padding: 15px;background-color: rgba(255, 255, 255, 0.5);margin: 100px 15px 0 15px;opacity: 0;
+	transition: all 0.6s;
+}
+
+article:hover p {
+    opacity: 1;
+	margin-top: 15px;
+	transition: all 0.6s;
+}
+
+article p span {
+    max-height: 60px;
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+article p a {
+    color: #FFF;
+    background-color: #555;
+    padding: 1px 5px;
+    display: inline-block;
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+article p a:hover {
+    color: #FFF;
+    text-decoration: none;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+article footer a span {
+	width: 30px;
+	height: 30px;
+	background-size: contain;
+	font-size: 0;
+	margin: 5px 10px;
+}
+
+button#loadMore {
+    margin: 40px auto;
+    display: block;
+}
+
+@media screen and (min-width: 376px){
+    article header,
+    article footer h2 {
+        font-size: 3rem;
+    }
+}
